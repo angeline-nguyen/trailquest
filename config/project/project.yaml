@@ -1,4 +1,41 @@
-dateModified: 1720468122
+dateModified: 1776036096
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      page: Entries
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: singles
+      page: Entries
+      tableAttributes:
+        - status
+        - link
+      type: native
+    -
+      key: 'section:b34c4443-5729-4a18-aa5c-78adee11d45a' # Adventures
+      page: Entries
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:71b6b026-30f5-4c06-8ae3-e5c14c3ad042' # Locations
+      page: Entries
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
 email:
   fromEmail: ryan@craftquest.io
   fromName: 'House Quest'
@@ -13,16 +50,69 @@ fs:
     url: '@web/local'
 meta:
   __names__:
+    2a2eb5fb-edf5-4b6d-a008-69e656f3d0a3: Images # Images
+    2d7abac0-4a46-4f7e-8d12-78f429793c7b: 'Rich Text' # Rich Text
+    3b3c4d50-8053-4ef6-8eaf-0e79ba3fe83a: 'Plain Text' # Plain Text
+    3c8f7057-adc3-43e0-8ef9-1ec7851e9b7a: 'Content Builder' # Content Builder
+    3d1c14d3-9735-40c5-a295-395543537be1: 'Content Builder CK' # Content Builder CK
+    4e9c8d37-4e96-4fba-84b0-c9e903c8e700: Image # Image
+    4fee5b63-a938-43e1-833b-001e43d65610: 'Locations Landing' # Locations Landing
+    5d908791-daea-4af7-b210-4298f97cb5f6: Location # Location
+    5f269524-8ce2-45bc-b56a-dc68bd1775f7: Testimonials # Testimonials
+    7c74cffb-aa0e-4d62-838e-48d01d3bf3cc: CTA # CTA
+    7ef85da9-0723-4cc8-b6b8-9df83b858b76: Contact # Contact
+    7f9642f6-4214-461b-a797-68bad626ff63: 'Adventures Landing' # Adventures Landing
+    8f7cffa5-6ed5-4957-80aa-7fd6388c55a1: Testimonials # Testimonials
+    9a72c914-9a47-4d2d-ba52-519015981393: 'Adventures Grid' # Adventures Grid
     9bebaaa3-6d87-4c75-afc8-f5f75ab950c4: Images # Images
+    9fb4ecc6-d39a-4e92-8488-982e03c31296: Contact # Contact
+    33bed828-65a4-4941-b936-034931852a48: Locations # Locations
+    71b6b026-30f5-4c06-8ae3-e5c14c3ad042: Locations # Locations
+    77c91fbd-2cd7-4977-8dcb-69d32a9a797c: 'Footer Nav' # Footer Nav
+    88c2ff01-95a0-4ae8-80ef-55ae8e7a418d: URL # URL
+    546f7ebc-8d77-478e-b0dd-e64cc936acbf: FAQs # FAQs
+    551d9b0e-6f13-45e7-80ae-5ce4b8915cde: 'Postal Address' # Postal Address
+    568eb182-5e62-42b7-a4fe-8766c816dd38: Homepage # Homepage
     620caa93-2603-4217-9713-700e82292681: 'Public Schema' # Public Schema
     4052097c-4aec-4442-af4c-df0a26b20065: 'Craft 5' # Craft 5
+    a5bc9cde-153d-4939-94bf-d0255ee521bc: 'Simple Table' # Simple Table
+    ac216393-732d-43d0-b395-4bed9470b804: 'Listing Page' # Listing Page
+    b3ba3e28-157f-4fe9-8e23-acb697a2e5a3: About # About
+    b34c4443-5729-4a18-aa5c-78adee11d45a: Adventures # Adventures
+    c054a9af-7bdf-4153-b1dc-45683f904df7: 'Adventures Grid Small' # Adventures Grid Small
+    c83bd48c-0bb3-481a-aaa0-1c19ac913239: 'Phone Number' # Phone Number
+    c982155f-5084-4c70-a6da-0873e1927164: 'Rich Text Content' # Rich Text Content
+    cd2c3296-aa5e-4606-80cb-4dbda6d4515e: 'Text Link' # Text Link
     d9d1ae21-b5ed-442d-bc28-0e3aa8b8c39b: 'Craft 5' # Craft 5
+    dd4ca2a9-96e3-4e8f-8030-97a27d9bc46f: Adventures # Adventures
+    de769a9c-25bc-499d-8163-c9bbdcd34667: Email # Email
+    e702a0a0-f0f4-44b8-86a7-072ef122e7b8: 'Main Nav' # Main Nav
+    f2bfa872-e7dc-4778-8bc2-b2412f34c360: Stats # Stats
+    f4b0ee41-9fa9-477f-a8ae-6190885b37de: Homepage # Homepage
+    f488bd05-7110-41f0-b778-84f22e0b8e61: 'Text Link' # Text Link
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.0.0.1
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  free-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  phone-number:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true
   name: 'Craft 5'
   retryDuration: null
-  schemaVersion: 5.0.0.21
+  schemaVersion: 5.9.0.8
   timeZone: America/Chicago
 users:
   allowPublicRegistration: false

@@ -1,0 +1,178 @@
+allowLineBreaksInTitles: false
+color: amber
+description: null
+fieldLayouts:
+  b18cd44e-913c-4b19-90e2-cb2f53db2201:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-04-11T06:55:31+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 08591ad8-a894-4eeb-ba20-f97d93643d0a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-04-12T03:41:42+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 3e61fd8b-73a1-4476-a32a-a38016aa4552
+            userCondition: null
+          -
+            dateAdded: '2026-04-12T03:41:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 5d908791-daea-4af7-b210-4298f97cb5f6 # Location
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2280d568-87d5-4531-92c5-528541a594ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-04-11T07:00:40+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3b3c4d50-8053-4ef6-8eaf-0e79ba3fe83a # Plain Text
+            handle: shortDescription
+            instructions: null
+            label: 'Short Description'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 906d3b94-09b8-4e3e-8f93-5026acb70992
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-04-11T07:00:40+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3b3c4d50-8053-4ef6-8eaf-0e79ba3fe83a # Plain Text
+            handle: longDescription
+            instructions: null
+            label: 'Long Description'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65de7c60-8209-45f0-9522-f87499a792f6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f234c3fe-085b-4f7d-a40f-9f579f78ff4e
+        userCondition: null
+      -
+        elementCondition:
+          class: craft\elements\conditions\entries\EntryCondition
+          conditionRules:
+            -
+              class: craft\fields\conditions\RelationalFieldConditionRule
+              fieldUid: 5d908791-daea-4af7-b210-4298f97cb5f6 # Location
+              layoutElementUid: 2280d568-87d5-4531-92c5-528541a594ed
+              operator: notempty
+              uid: ee7ea897-16c4-4e58-93cd-a7349e1f190b
+          elementType: craft\elements\Entry
+          fieldContext: global
+        elements:
+          -
+            dateAdded: '2026-04-11T07:00:40+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2a2eb5fb-edf5-4b6d-a008-69e656f3d0a3 # Images
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b006e555-3681-4da6-970d-b9084c8614d5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Images
+        uid: 8b1d04d2-62ec-4bd9-b15c-aa93ed0e4235
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-04-12T01:31:17+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3c8f7057-adc3-43e0-8ef9-1ec7851e9b7a # Content Builder
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efe92ff0-91aa-4543-89a6-82fc6fb296a0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-04-12T01:42:54+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3d1c14d3-9735-40c5-a295-395543537be1 # Content Builder CK
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b6a4127-c251-471d-a35f-480244f54b7a
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Content Builder'
+        uid: 80e086bb-3bad-4b04-b253-336062cede8c
+        userCondition: null
+    thumbFieldKey: null
+handle: adventures
+hasTitleField: true
+icon: person-hiking
+name: Adventures
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

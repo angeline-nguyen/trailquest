@@ -1,0 +1,50 @@
+<div class="max-w-full mx-auto px-4 sm:px-6"> 
+    <div class="flex items-center justify-between">
+        <div class="logo">
+            <a href="/" class="text-base font-medium text-gray-300 hover:text-secondary">
+                        <img
+                            src="/images/logo.svg"
+                            class="h-16 w-auto hover:opacity-50"
+                            alt="TrailQuest"
+                        />
+            </a>
+        </div>
+        <nav id="top-nav" class="main-nav flex justify-between items-center py-6 md:space-x-10">
+            <a href="/" id="home-link" class= "home text-base font-bold text-gray-300 hover:text-secondary">
+                Home
+            </a>
+            {% set navNodes = craft.freenav.nodes("mainNav") %}
+            {% for node in navNodes %}
+                <a
+                href="{{ node.url }}"
+                class="text-base font-medium text-gray-300 hover:text-secondary"
+                >
+                    {{ node.title }}
+                </a>
+            {% endfor %}
+        </nav>
+    </div>
+        <button
+            type="button"
+            id="nav-button"
+            class="nav-icon bg-white rounded-md p-2 items-center justify-center text-primary hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            aria-expanded="false"
+            onclick="toggleNav()"
+        >
+            <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                />
+            </svg>
+        </button>
+</div>

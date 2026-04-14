@@ -1,0 +1,51 @@
+.main-nav {
+  overflow: hidden;
+}
+
+.main-nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+a.home {
+    display: none;
+}
+
+button.nav-icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav a:not(:first-child) {display: none;}
+    button.nav-icon {
+        float: none;
+        position: absolute;
+        right: 1em;
+        top: 2em;
+        display: block;
+    }
+    .logo {
+        display:none;
+    }
+    a.home {
+        padding-top: 1em;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav.responsive {position: relative;}
+    .main-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    a.home.responsive {
+        padding-top: 2.5em;
+    }
+    .logo {
+        display: none;
+    }
+}

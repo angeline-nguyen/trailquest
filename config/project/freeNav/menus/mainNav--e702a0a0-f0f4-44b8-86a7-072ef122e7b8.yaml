@@ -1,0 +1,13 @@
+defaultPlacement: end
+handle: mainNav
+instructions: ''
+maxLevels: null
+maxNodes: null
+name: 'Main Nav'
+propagationMethod: all
+sites:
+  d9d1ae21-b5ed-442d-bc28-0e3aa8b8c39b: # Craft 5
+    enabled: true
+structure:
+  maxLevels: null
+  uid: e832daaa-a2b5-435a-bba9-255084a87004

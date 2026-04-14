@@ -1,0 +1,13 @@
+defaultPlacement: end
+handle: footerNav
+instructions: ''
+maxLevels: null
+maxNodes: null
+name: 'Footer Nav'
+propagationMethod: all
+sites:
+  d9d1ae21-b5ed-442d-bc28-0e3aa8b8c39b: # Craft 5
+    enabled: true
+structure:
+  maxLevels: null
+  uid: c55a42e6-1222-45a0-ae6e-b0573f33d2dc

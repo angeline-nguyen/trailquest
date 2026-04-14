@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TrailQuest Running</title>
+        
+        <script type="module" crossorigin src="/assets/main.eeb45929.js"></script>
+        <script src="/assets/secondary.js"></script>
+        <link rel="stylesheet" href="/assets/main.9b87cd94.css">
+        <link rel="stylesheet" href="/assets/secondary.css">
+    </head>
+    <body>
+        <div class="relative bg-primary">
+            {% include '_shared/_topNav.twig' %}
+        </div>
+        {% block main %}
+            {# this is the template-specific code and content #}
+        {% endblock %}
+        <footer class="bg-primary">
+            <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+                <nav
+                class="-mx-5 -my-2 flex flex-wrap justify-center"
+                aria-label="Footer"
+                >
+                    <div class="px-5 py-2">
+                        <a href="/adventures" class="text-base text-gray-300 hover:text-secondary">
+                            Trail Adventures
+                        </a>
+                    </div>
+
+                    <div class="px-5 py-2">
+                        <a href="/locations" class="text-base text-gray-300 hover:text-secondary">
+                            Locations
+                        </a>
+                    </div>
+
+                    <div class="px-5 py-2">
+                        <a href="/faqs" class="text-base text-gray-300 hover:text-secondary">
+                            FAQs
+                        </a>
+                    </div>
+
+                    <div class="px-5 py-2">
+                        <a href="/contact" class="text-base text-gray-300 hover:text-secondary">
+                            Contact
+                        </a>
+                    </div>
+                </nav>
+                <p class="mt-8 text-center text-base text-gray-400">
+                    &copy; 2026 TrailQuest
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

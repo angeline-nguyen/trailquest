@@ -1,0 +1,42 @@
+allowLineBreaksInTitles: false
+color: yellow
+description: null
+fieldLayouts:
+  7a88f7d0-37d2-43a6-bcce-63516ec3c1bf:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-04-12T01:26:18+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f488bd05-7110-41f0-b778-84f22e0b8e61 # Text Link
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a820936c-3a51-4210-80f4-58652a1595f8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2b8c94f3-e0a2-43e9-9a23-1c9c7a84b2ef
+        userCondition: null
+    thumbFieldKey: null
+handle: cta
+hasTitleField: false
+icon: comment
+name: CTA
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{textLink[0].linkText}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

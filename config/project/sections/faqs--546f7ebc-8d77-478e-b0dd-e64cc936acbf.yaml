@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 2d7abac0-4a46-4f7e-8d12-78f429793c7b # Rich Text
+handle: faqs
+maxAuthors: 1
+name: FAQs
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  d9d1ae21-b5ed-442d-bc28-0e3aa8b8c39b: # Craft 5
+    enabledByDefault: true
+    hasUrls: true
+    template: faqs.twig
+    uriFormat: faqs
+type: single
